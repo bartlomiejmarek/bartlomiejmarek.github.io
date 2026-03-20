@@ -1,10 +1,8 @@
 # SITE SETUP
 # Guide: https://docs.hugoblox.com/tutorial/
 # Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
-
 appearance:
   theme_day: custom
   theme_night: custom
@@ -12,14 +10,13 @@ appearance:
   font_size: L
 
 # SEO
-
 marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo blog theme powered by Wowchemy website builder.'
-    twitter: 'GetResearchDev'
+    org_name: 'CISPA Helmholtz Center for Information Security'
+    description: 'Bartłomiej Marek — PhD Candidate at CISPA, SprintML lab. Research on privacy and security of LLMs, multimodal models, and audio deepfake detection.'
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -30,7 +27,6 @@ marketing:
     baidu: ''
 
 # Site header
-
 header:
   navbar:
     enable: true
@@ -39,25 +35,20 @@ header:
     show_language: false
     show_day_night: true
     show_search: true
-    highlight_active_link: false
+    highlight_active_link: true
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Bartłomiej Marek'
     license:
-      enable: true
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+      enable: false
 
 # Localization
-
 locale:
-  date_format: 'Jan 2, 2006'
+  date_format: 'Jan 2006'
   time_format: '3:04 PM'
 
 # Site features
-
 features:
   syntax_highlighter:
     enable: true
@@ -69,7 +60,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/bartlomiejmarek/bartlomiejmarek.github.io'
     content_dir: content
     branch: main
   avatar:
@@ -104,4 +95,4 @@ extensions:
     branch: main
     local_backend: false
   academicons:
-    enable: false
+    enable: true

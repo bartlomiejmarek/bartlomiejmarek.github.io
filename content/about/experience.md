@@ -1,6 +1,5 @@
 ---
 # An instance of the Experience widget.
-# Documentation: https://docs.hugoblox.com/page-builder/
 widget: experience
 
 # This file represents a page section.
@@ -13,29 +12,50 @@ title: Experience
 subtitle:
 
 # Date format for experience
-#   Refer to https://docs.hugoblox.com/customization/#date-format
 date_format: Jan 2006
 
-# Experiences.
-#   Add/remove as many `experience` items below as you like.
-#   Required fields are `title`, `company`, and `date_start`.
-#   Leave `date_end` empty if it's your current employer.
-#   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: PhD Candidate
+    company: CISPA Helmholtz Center for Information Security
+    company_url: 'https://cispa.de'
+    company_logo: org-cispa
+    location: Saarbrücken, Germany
+    date_start: '2025-03-01'
+    date_end: ''
+    description: |2-
+        Member of the [SprintML](https://sprintml.com) lab — Secure, Private, Robust, INterpretable, and Trustworthy ML.
+        Supervised by [Dr. Adam Dziedzic](https://adam-dziedzic.com/) and [Dr. Franziska Boenisch](https://franziska-boenisch.de/).
+
+        Research focus:
+        * Privacy and security of large language models (LLMs) and multimodal models.
+        * Empirical privacy evaluation under differential private adaptation.
+        * Current project: privacy of multimodal models (publication in preparation).
+
+  - title: Research Intern
+    company: CISPA Helmholtz Center for Information Security
+    company_url: 'https://cispa.de'
+    company_logo: org-cispa
+    location: Saarbrücken, Germany
+    date_start: '2024-09-01'
+    date_end: '2025-02-28'
+    description: |2-
+        Member of the [SprintML](https://sprintml.com) lab.
+        Supervised by [Dr. Adam Dziedzic](https://adam-dziedzic.com/) and [Dr. Franziska Boenisch](https://franziska-boenisch.de/).
+
+        * Conducted research on empirical privacy protection for LLM adaptations.
+        * Co-authored *Benchmarking Empirical Privacy Protection for Adaptations of Large Language Models* (ICLR 2026, Oral).
+
   - title: Vulnerability Management Specialist
     company: ZF Automotive IT Poland (ZF Group)
     company_url: ''
     company_logo: org-zf
     location: ''
     date_start: '2022-11-01'
-    date_end: ''
+    date_end: '2024-08-31'
     description: |2-
-        Responsibilities include:
         * Automation of security processes.
         * Co-creation of the vulnerability management process for the hybrid cloud infrastructure using Orca Security.
-        * Creating basic vulnerabilities scans with Nessus.
         * Creating dashboards using MS PowerBI and Grafana.
-        
 
         **Technologies**: Python, Orca Security, Nessus, PowerBI, Grafana, SQL
 
@@ -45,24 +65,9 @@ experience:
     company_logo: ''
     location: ''
     date_start: '2023-07-01'
-    date_end: ''
+    date_end: '2024-08-31'
     description: |2-
-        Responsibilities include:    
-        * Course delivery: Introduction to Python for the security domain
-        
-        **Technologies**: Python
-
-  - title: Vulnerability Management Intern
-    company: ZF Automotive IT Poland (ZF Group)
-    company_url: ''
-    company_logo: org-zf
-    location: ''
-    date_start: '2022-06-01'
-    date_end: '2022-11-01'
-    description: |2-
-        Responsibilities include:   
-        * Development of simple scripts to automate security processes.
-        * Creating dashboards using MS PowerBI and Grafana.
+        * Course delivery: Introduction to Python for the security domain.
 
   - title: Cybersecurity Consultant Trainee
     company: PwC Poland
@@ -72,42 +77,10 @@ experience:
     date_start: '2022-07-01'
     date_end: '2022-10-01'
     description: |2-
-        Responsibilities include:        
-        * Risk assessment and threat modeling
-          
-        **Technologies**: MITTRE ATT&CK, Risk Assessment
-        
+        * Risk assessment and threat modeling.
 
-  - title: System Administrator Intern
-    company: ZF Automotive IT Poland (ZF Group)
-    company_url: ''
-    company_logo: org-zf
-    location: ''
-    date_start: '2021-11-01'
-    date_end: '2022-05-31'
-    description: |2-
-        Responsibilities include:        
-        * Governance, support, administration SAP Business Intelligence applications: SAP Analytics Cloud and SAP Analysis for Office.
+        **Technologies**: MITRE ATT&CK, Risk Assessment
 
-        **Technologies**: SAP Analytics Cloud, SAP Analysis for Office,  SAP Business Intelligence
-
-  - title: Cybersecurity trainee
-    company: ZF Automotive IT Poland (ZF Group)
-    company_url: ''
-    company_logo: org-zf
-    location: ''
-    date_start: '2021-06-01'
-    date_end: '2021-10-31'
-    description: ''
-  
-  - title: Math and physics tutor
-    company: Edu Projekt
-    company_url: ''
-    company_logo: ''
-    location: ''
-    date_start: '2019-09-01'
-    date_end: '2024-05-31'
-    description: ''
 design:
   columns: '1'
 ---

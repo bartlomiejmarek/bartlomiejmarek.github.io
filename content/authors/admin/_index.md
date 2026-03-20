@@ -6,61 +6,50 @@ title: Bartłomiej Marek
 superuser: true
 
 # Role/position
-role: ''
+role: PhD Candidate
 
 # Status emoji
 status:
-  icon: 🧑‍💻️
+  icon: 🔬
 
 # Organizations/Affiliations
 organizations:
-- name: ""
-  url: ""
+- name: CISPA Helmholtz Center for Information Security
+  url: "https://cispa.de"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include security of Artificial Intelligence and Machine Learning, biometrics and DeepFakes. 
+bio: PhD Candidate at CISPA, SprintML lab. I research privacy and security of large language models and multimodal systems.
 
 interests:
-- Artificial Intelligence
-- Machine Learning
-- Biometrics
-- DeepFakes
-
-#education:
-# courses:
-# - course: MEng in Trusted Artificial Intelligence Systems
-#   institution: Wrocław Univeristy of Science and Technology
-#   year: 2023-2024
-# - course: BSc in Cybersecurity
-#   institution: Wrocław Univeristy of Science and Technology
-#   year: 2019-2023
+- Privacy in Machine Learning
+- Differential Privacy
+- LLM & Multimodal Model Security
+- Audio DeepFake Detection
+- Biometric Systems
 
 # Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:test@example.org' # For a direct email link, use "mailto:test@example.org".
-  - icon: linkedin
-    icon_pack: fab
-    link: 'https://www.linkedin.com/in/bart%C5%82omiej-marek-1465181b9/'
+    link: 'mailto:bartlomiej.marek@cispa.de'
+  - icon: google-scholar
+    icon_pack: ai
+    link: 'https://scholar.google.com/citations?user=vNTfr4kAAAAJ&hl=en'
   - icon: github
     icon_pack: fab
     link: 'https://github.com/bartlomiejmarek'
-
-# Uncomment below for Github link
-
+  - icon: linkedin
+    icon_pack: fab
+    link: 'https://www.linkedin.com/in/bart%C5%82omiej-marek-1465181b9/'
 
 # Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
 #   icon_pack: ai
 #   link: files/cv.pdf
-
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-#email: ""
 ---
 
+I am a PhD Candidate at [CISPA Helmholtz Center for Information Security](https://cispa.de), working in the [SprintML](https://sprintml.com) lab under the supervision of [Dr. Adam Dziedzic](https://adam-dziedzic.com/) and [Dr. Franziska Boenisch](https://franziska-boenisch.de/).
 
+My research focuses on the **privacy and security of large language models (LLMs)** and machine learning systems more broadly — including membership inference, differential privacy auditing, and data extraction risks during model adaptation. I am currently focusing on **privacy of multimodal models** (paper coming soon!).
+
+Previously, I studied at Wrocław University of Science and Technology (MEng in Trusted AI, BEng in Cybersecurity, both with honors), and worked on multilingual audio DeepFake detection and biometric systems.
