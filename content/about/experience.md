@@ -25,11 +25,8 @@ experience:
     description: |2-
         Member of the [SprintML](https://sprintml.com) lab — Secure, Private, Robust, INterpretable, and Trustworthy ML.
         Supervised by [Dr. Adam Dziedzic](https://adam-dziedzic.com/) and [Dr. Franziska Boenisch](https://franziska-boenisch.de/).
-
         Research focus:
-        * Privacy and security of large language models (LLMs) and multimodal models.
-        * Empirical privacy evaluation under differential private adaptation.
-        * Current project: privacy of multimodal models (publication in preparation).
+        * Privacy and security of large foundation models.
 
   - title: Research Intern
     company: CISPA Helmholtz Center for Information Security
@@ -41,9 +38,7 @@ experience:
     description: |2-
         Member of the [SprintML](https://sprintml.com) lab.
         Supervised by [Dr. Adam Dziedzic](https://adam-dziedzic.com/) and [Dr. Franziska Boenisch](https://franziska-boenisch.de/).
-
         * Conducted research on empirical privacy protection for LLM adaptations.
-        * Co-authored *Benchmarking Empirical Privacy Protection for Adaptations of Large Language Models* (ICLR 2026, Oral).
 
   - title: Vulnerability Management Specialist
     company: ZF Automotive IT Poland (ZF Group)

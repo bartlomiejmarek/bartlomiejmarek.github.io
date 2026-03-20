@@ -22,10 +22,8 @@ bio: PhD Candidate at CISPA, SprintML lab. I research privacy and security of la
 
 interests:
 - Privacy in Machine Learning
-- Differential Privacy
 - LLM & Multimodal Model Security
 - Audio DeepFake Detection
-- Biometric Systems
 
 # Social/Academic Networking
 social:
@@ -50,6 +48,6 @@ social:
 
 I am a PhD Candidate at [CISPA Helmholtz Center for Information Security](https://cispa.de), working in the [SprintML](https://sprintml.com) lab under the supervision of [Dr. Adam Dziedzic](https://adam-dziedzic.com/) and [Dr. Franziska Boenisch](https://franziska-boenisch.de/).
 
-My research focuses on the **privacy and security of large language models (LLMs)** and machine learning systems more broadly — including membership inference, differential privacy auditing, and data extraction risks during model adaptation. I am currently focusing on **privacy of multimodal models** (paper coming soon!).
+My research focuses on the **privacy and security of large foundation models (LLMs)**. I am currently focusing on **privacy of multimodal models** (paper coming soon!).
 
 Previously, I studied at Wrocław University of Science and Technology (MEng in Trusted AI, BEng in Cybersecurity, both with honors), and worked on multilingual audio DeepFake detection and biometric systems.
