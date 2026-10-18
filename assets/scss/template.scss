@@ -619,8 +619,9 @@ button.filter-button,
   left: 8px;
   bottom: calc(#{$xp-taskbar-h} + 6px);
   z-index: 0;
-  // Quote so libsass does not treat CSS min() as a Sass builtin (breaks with calc()).
-  max-width: unquote("min(42rem, calc(100vw - 16px))");
+  // Avoid CSS min() — Hugo libsass treats it as a Sass builtin and rejects calc().
+  max-width: 42rem;
+  width: calc(100vw - 16px);
   margin: 0;
   padding: 0;
   border: 0;
