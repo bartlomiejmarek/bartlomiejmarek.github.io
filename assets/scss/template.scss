@@ -619,7 +619,8 @@ button.filter-button,
   left: 8px;
   bottom: calc(#{$xp-taskbar-h} + 6px);
   z-index: 0;
-  max-width: min(42rem, calc(100vw - 16px));
+  // Quote so libsass does not treat CSS min() as a Sass builtin (breaks with calc()).
+  max-width: unquote("min(42rem, calc(100vw - 16px))");
   margin: 0;
   padding: 0;
   border: 0;
