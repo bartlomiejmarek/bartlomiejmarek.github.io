@@ -22,6 +22,19 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: PhD Candidate
+    company: CISPA Helmholtz Center for Information Security
+    company_url: 'https://cispa.de'
+    company_logo: org-cispa
+    location: Saarbrücken, Germany
+    date_start: '2025-03-01'
+    date_end: ''
+    description: |2-
+        Member of the [SprintML](https://sprintml.com) lab — Secure, Private, Robust, INterpretable, and Trustworthy ML.
+        Supervised by [Dr. Adam Dziedzic](https://adam-dziedzic.com/) and [Dr. Franziska Boenisch](https://franziska-boenisch.de/).
+        Research focus:
+        * Privacy and security of large foundation models.
+
   - title: MEng Trusted Artificial Intelligence
     company: Wrocław Univeristy of Science and Technology
     company_url: ''

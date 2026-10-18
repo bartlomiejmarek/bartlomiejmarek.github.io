@@ -19,6 +19,8 @@ publication_types: ["paper-conference"]
 publication: "The Fourteenth International Conference on Learning Representations (ICLR 2026)"
 publication_short: "ICLR 2026"
 
+tldr: "DP adaptations of LLMs can still leak training data in practice. We benchmark membership inference and canary extraction across data distributions and adaptation methods, and find LoRA gives the strongest empirical privacy on OOD data."
+
 abstract: "Recent work has applied differential privacy (DP) to adapt large language models (LLMs) for sensitive applications, offering theoretical guarantees. However, its practical effectiveness remains unclear, partly due to LLM pretraining, where overlaps and interdependencies with adaptation data can undermine privacy despite DP efforts. To analyze this issue in practice, we investigate privacy risks under DP adaptations in LLMs using state-of-the-art attacks such as robust membership inference and canary data extraction. We benchmark these risks by systematically varying the adaptation data distribution, from exact overlaps with pretraining data, through in-distribution (IID) cases, to entirely out-of-distribution (OOD) examples. Additionally, we evaluate how different adaptation methods and different privacy regimes impact the vulnerability. Our results show that distribution shifts strongly influence privacy vulnerability: the closer the adaptation data is to the pretraining distribution, the higher the practical privacy risk, even without direct data overlap. We find that parameter-efficient fine-tuning methods, such as LoRA, achieve the highest empirical privacy protection for OOD data."
 
 tags:
@@ -33,8 +35,16 @@ links:
     url: 'https://openreview.net/forum?id=IoT0PpDILA'
     icon_pack: ai
     icon: open-access
+  - name: arXiv
+    url: 'https://arxiv.org/abs/2606.09401'
+    icon_pack: ai
+    icon: arxiv
+  - name: Blog
+    url: 'https://sprintml.com/blog/2026-04-28-benchmarking_empirical_privacy_protection_for_adaptation_of_llms/'
+    icon_pack: fas
+    icon: newspaper
 
-url_pdf: 'https://openreview.net/pdf?id=IoT0PpDILA'
+url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''

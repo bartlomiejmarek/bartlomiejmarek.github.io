@@ -19,6 +19,8 @@ publication_types: ["paper-conference"]
 publication: "2024 IEEE/ACM 24th International Symposium on Cluster, Cloud and Internet Computing Workshops (CCGridW)"
 publication_short: "CCGridW 2024"
 
+tldr: "Backdoors can silently flip Android malware detectors. We defend with feature selection that shrinks the attack surface in both centralised and federated learning, with little cost to clean accuracy."
+
 abstract: "Machine learning-based Android malware detectors are increasingly used in security products. However, they are vulnerable to backdoor attacks, where an adversary poisons the training data to embed a hidden trigger that causes misclassification. In this work we propose a defensive feature selection approach that reduces the attack surface available to backdoor adversaries, demonstrating effective defense across classic and federated learning settings."
 
 tags:
@@ -26,6 +28,12 @@ tags:
 - Security
 
 featured: false
+
+links:
+  - name: IEEE Xplore
+    url: 'https://ieeexplore.ieee.org/abstract/document/10707493'
+    icon_pack: fas
+    icon: external-link-alt
 
 url_pdf: ''
 url_code: ''
@@ -36,7 +44,6 @@ url_slides: ''
 url_source: ''
 url_video: ''
 
-projects:
-- securingML
+projects: []
 slides: ""
 ---

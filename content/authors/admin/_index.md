@@ -8,10 +8,6 @@ superuser: true
 # Role/position
 role: PhD Candidate
 
-# Status emoji
-status:
-  icon: 🔬
-
 # Organizations/Affiliations
 organizations:
 - name: CISPA Helmholtz Center for Information Security
@@ -22,10 +18,9 @@ bio: PhD Candidate at CISPA, SprintML lab. I research privacy and security of la
 
 interests:
 - Privacy in Machine Learning
-- LLM & Multimodal Model Security
-- Audio DeepFake Detection
+- LLM & Multimodal Model Privacy
 
-# Social/Academic Networking
+
 social:
   - icon: envelope
     icon_pack: fas
@@ -40,14 +35,10 @@ social:
     icon_pack: fab
     link: 'https://www.linkedin.com/in/bart%C5%82omiej-marek-1465181b9/'
 
-# Link to a PDF of your resume/CV from the About widget.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
 ---
 
 I am a PhD Candidate at [CISPA Helmholtz Center for Information Security](https://cispa.de), working in the [SprintML](https://sprintml.com) lab under the supervision of [Dr. Adam Dziedzic](https://adam-dziedzic.com/) and [Dr. Franziska Boenisch](https://franziska-boenisch.de/).
 
-My research focuses on the **privacy and security of large foundation models (LLMs)**. I am currently focusing on **privacy of multimodal models** (paper coming soon!).
+My research focuses on the **privacy and security of large foundation models**. I am currently focusing on **privacy of multimodal models** (paper coming soon!).
 
-Previously, I studied at Wrocław University of Science and Technology, and worked on multilingual audio DeepFake detection and biometric systems.
+Previously, I studied at Wrocław University of Science and Technology, and worked on multilingual audio DeepFake detection and biometric systems. 

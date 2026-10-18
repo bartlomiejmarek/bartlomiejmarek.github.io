@@ -19,6 +19,10 @@ cascade:
     commentable: true
     show_related: true
     show_breadcrumb: true
+  # Use theme publication layouts/views for the publications section
+  - _target:
+      path: /publications/**
+    type: publication
 
 ############################
 ## LANGUAGE

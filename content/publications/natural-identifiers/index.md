@@ -16,6 +16,8 @@ publication_types: ["paper-conference"]
 publication: "The Fourteenth International Conference on Learning Representations (ICLR 2026)"
 publication_short: "ICLR 2026"
 
+tldr: "Post-hoc privacy audits of LLMs usually need planted canaries or held-out IID data. We use naturally occurring identifiers (hashes, short URLs) as NIDs so models can be audited without costly retraining."
+
 abstract: "Assessing the privacy of large language models (LLMs) presents significant challenges. In particular, most existing methods for auditing differential privacy require the insertion of specially crafted canary data during training, making them impractical for auditing already-trained models without costly retraining. Additionally, dataset inference, which audits whether a suspect dataset was used to train a model, is infeasible without access to a private non-member held-out dataset. Yet, such held-out datasets are often unavailable or difficult to construct for real-world cases since they have to be from the same distribution (IID) as the suspect data. These limitations severely hinder the ability to conduct scalable, post-hoc audits. To enable such audits, this work introduces natural identifiers (NIDs) as a novel solution to the above-mentioned challenges. NIDs are structured random strings, such as cryptographic hashes and shortened URLs, naturally occurring in common LLM training datasets. Their format enables the generation of unlimited additional random strings from the same distribution, which can act as alternative canaries for audits and as same-distribution held-out data for dataset inference."
 
 tags:
@@ -30,8 +32,16 @@ links:
     url: 'https://openreview.net/forum?id=doaAUf9Pi7'
     icon_pack: ai
     icon: open-access
+  - name: arXiv
+    url: 'https://arxiv.org/abs/2606.24408'
+    icon_pack: ai
+    icon: arxiv
+  - name: Blog
+    url: 'https://sprintml.com/blog/2026-04-28-nid_for_privacy_and_data_audits/'
+    icon_pack: fas
+    icon: newspaper
 
-url_pdf: 'https://openreview.net/pdf?id=doaAUf9Pi7'
+url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''
