@@ -1,3 +1,37 @@
+{{/* XP system-tray clock */}}
+<script>
+(function () {
+  var el = document.getElementById('xp-clock');
+  if (!el) return;
+
+  function pad(n) {
+    return n < 10 ? '0' + n : String(n);
+  }
+
+  function tick() {
+    var now = new Date();
+    var h = now.getHours();
+    var m = now.getMinutes();
+    var s = now.getSeconds();
+    // Classic XP tray style: 12-hour with AM/PM when locale is en, else 24h.
+    var use12 = (navigator.language || '').toLowerCase().indexOf('en') === 0;
+    if (use12) {
+      var ampm = h >= 12 ? 'PM' : 'AM';
+      var h12 = h % 12;
+      if (h12 === 0) h12 = 12;
+      el.textContent = h12 + ':' + pad(m) + ' ' + ampm;
+      el.title = now.toLocaleString();
+    } else {
+      el.textContent = pad(h) + ':' + pad(m) + ':' + pad(s);
+      el.title = now.toLocaleString();
+    }
+  }
+
+  tick();
+  window.setInterval(tick, 1000);
+})();
+</script>
+
 {{/* Resume section TOC: highlight current section + scroll to window title bar. */}}
 <script>
 (function () {

@@ -113,7 +113,7 @@
 {{/* Window title: page Title, else a sensible default for untitled widgets. */}}
 {{ $window_title := $block.Title }}
 {{ if not $window_title }}
-  {{ if eq $block_type "about.avatar" }}{{ $window_title = site.Title }}
+  {{ if eq $block_type "about.avatar" }}{{ $window_title = "Profile" }}
   {{ else if eq $block_type "about" }}{{ $window_title = "About" }}
   {{ else }}{{ $window_title = site.Title }}
   {{ end }}
