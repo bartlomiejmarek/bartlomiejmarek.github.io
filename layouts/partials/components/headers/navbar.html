@@ -1,0 +1,67 @@
+{{ $show_navbar := ((site.Params.header.navbar.enable | default true) | and (ne .Params.header.navbar.enable false)) | or .Params.header.navbar.enable }}
+{{ if $show_navbar }}
+
+{{ $current_page := . }}
+{{ $highlight_active_link := site.Params.header.navbar.highlight_active_link | default true }}
+
+{{ $copyright := site.Params.footer.copyright.notice | default "" }}
+{{ $copyright = replace $copyright "{year}" now.Year }}
+
+<header class="xp-taskbar-header">
+  <nav class="navbar navbar-expand navbar-light xp-taskbar" id="navbar-main">
+    <div class="container-fluid xp-taskbar-inner">
+
+      <a class="xp-start-btn" href="{{ site.Home.RelPermalink }}">Home</a>
+
+      <div class="navbar-collapse main-menu-item show" id="navbar-content">
+        <ul class="navbar-nav xp-task-buttons">
+          {{ range site.Menus.main }}
+          {{ if not .HasChildren }}
+
+          {{ $.Scratch.Set "target" "" }}
+          {{ if gt (len .URL) 4 }}
+            {{ if eq "http" (slicestr .URL 0 4) }}
+              {{ $.Scratch.Set "target" " target=\"_blank\" rel=\"noopener\"" }}
+            {{ end }}
+          {{ end }}
+
+          {{ $is_link_in_current_path := false }}
+          {{ $hash := findRE "#(.+)" .URL }}
+
+          {{ if $current_page.IsHome | and (or (eq .URL "/") (eq .URL "")) }}
+            {{ $is_link_in_current_path = true }}
+          {{ else }}
+            {{ if gt (len .URL) 1 }}
+              {{ $is_link_in_current_path = in $current_page.RelPermalink .URL }}
+            {{ end }}
+            {{ if gt (len $hash) 0 }}
+              {{ $hash = index $hash 0 }}
+              {{ $hash_removed := replace .URL $hash "" }}
+              {{ if eq (len $hash_removed) 0 }}
+                {{ $hash_removed = "/" }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+
+          {{/* Home is the green Start-style button; skip duplicate in the task buttons. */}}
+          {{ if not (or (eq .URL "/") (eq .URL "")) }}
+          <li class="nav-item">
+            <a class="nav-link{{ if and $highlight_active_link $is_link_in_current_path }} active{{ end }}" href="{{ .URL | relLangURL }}"{{ ($.Scratch.Get "target") | safeHTMLAttr }}>
+              <span>{{ .Name | safeHTML }}</span>
+            </a>
+          </li>
+          {{ end }}
+
+          {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+
+      <div class="xp-tray" aria-label="System tray">
+        <span class="xp-tray-clock">{{ $copyright }}</span>
+      </div>
+
+    </div>
+  </nav>
+</header>
+{{ end }}

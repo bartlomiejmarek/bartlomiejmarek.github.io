@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A90D9"/>
+      <stop offset="35%" stop-color="#7EB8E8"/>
+      <stop offset="55%" stop-color="#B8D9F0"/>
+      <stop offset="70%" stop-color="#E4EFC0"/>
+      <stop offset="100%" stop-color="#C5D98A"/>
+    </linearGradient>
+    <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7CB342"/>
+      <stop offset="100%" stop-color="#558B2F"/>
+    </linearGradient>
+    <linearGradient id="hillNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#689F38"/>
+      <stop offset="100%" stop-color="#33691E"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="78%" cy="18%" r="14%">
+      <stop offset="0%" stop-color="#FFFDE7"/>
+      <stop offset="40%" stop-color="#FFECB3"/>
+      <stop offset="100%" stop-color="#FFECB3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <circle cx="1500" cy="200" r="220" fill="url(#sun)"/>
+  <ellipse cx="380" cy="220" rx="160" ry="55" fill="#FFFFFF" opacity="0.8"/>
+  <ellipse cx="450" cy="205" rx="100" ry="42" fill="#FFFFFF" opacity="0.75"/>
+  <ellipse cx="320" cy="235" rx="90" ry="38" fill="#FFFFFF" opacity="0.7"/>
+  <ellipse cx="1050" cy="160" rx="130" ry="45" fill="#FFFFFF" opacity="0.65"/>
+  <ellipse cx="1120" cy="148" rx="80" ry="35" fill="#FFFFFF" opacity="0.6"/>
+  <!-- Hills sit higher so they remain visible with background-size: cover -->
+  <path d="M0 420 C180 360 380 390 580 450 C780 520 980 380 1180 430 C1380 480 1580 400 1920 450 L1920 1080 L0 1080 Z" fill="url(#hillFar)"/>
+  <path d="M0 560 C220 500 420 540 680 580 C940 620 1180 500 1480 550 C1680 585 1820 540 1920 570 L1920 1080 L0 1080 Z" fill="url(#hillNear)"/>
+  <path d="M0 720 C280 680 560 740 880 700 C1200 660 1500 720 1920 690 L1920 1080 L0 1080 Z" fill="#2E7D32"/>
+</svg>

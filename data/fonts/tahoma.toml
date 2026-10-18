@@ -1,0 +1,9 @@
+# Single system font family for the XP chrome.
+name = "Tahoma"
+
+google_fonts = ""
+
+heading_font = "Tahoma"
+body_font = "Tahoma"
+nav_font = "Tahoma"
+mono_font = "Tahoma"

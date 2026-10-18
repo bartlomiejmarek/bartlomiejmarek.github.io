@@ -1,0 +1,109 @@
+{{/* Resume section TOC: highlight current section + scroll to window title bar. */}}
+<script>
+(function () {
+  var toc = document.querySelector('.home-section.resume-toc, .resume-toc');
+  if (!toc) return;
+
+  var links = Array.prototype.slice.call(toc.querySelectorAll('a[href^="#"]'));
+  if (!links.length) return;
+
+  var sections = links
+    .map(function (link) {
+      var id = link.getAttribute('href').slice(1);
+      var el = document.getElementById(id);
+      return el ? { id: id, el: el, link: link } : null;
+    })
+    .filter(Boolean);
+
+  var lockUntil = 0;
+
+  function setActive(id) {
+    links.forEach(function (link) {
+      var on = link.getAttribute('href') === '#' + id;
+      link.classList.toggle('is-active', on);
+      if (on) {
+        link.setAttribute('aria-current', 'true');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
+  }
+
+  function stickyOffset() {
+    // Keep the destination title bar just under the sticky TOC window.
+    var sticky = document.querySelector('.home-section.resume-toc');
+    if (!sticky) return 12;
+    return Math.ceil(sticky.getBoundingClientRect().height) + 12;
+  }
+
+  function scrollToSection(el) {
+    var top = el.getBoundingClientRect().top + window.pageYOffset - stickyOffset();
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  links.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      var id = link.getAttribute('href').slice(1);
+      var el = document.getElementById(id);
+      if (!el) return;
+      event.preventDefault();
+      lockUntil = Date.now() + 800;
+      setActive(id);
+      scrollToSection(el);
+      if (history.replaceState) {
+        history.replaceState(null, '', '#' + id);
+      }
+    });
+  });
+
+  if ('IntersectionObserver' in window && sections.length) {
+    var visible = {};
+    var observer = new IntersectionObserver(
+      function (entries) {
+        if (Date.now() < lockUntil) return;
+        entries.forEach(function (entry) {
+          visible[entry.target.id] = entry.isIntersecting ? entry.intersectionRatio : 0;
+        });
+        var bestId = null;
+        var bestRatio = 0;
+        sections.forEach(function (section) {
+          var ratio = visible[section.id] || 0;
+          if (ratio > bestRatio) {
+            bestRatio = ratio;
+            bestId = section.id;
+          }
+        });
+        if (bestId) setActive(bestId);
+      },
+      {
+        root: null,
+        rootMargin: '-15% 0px -60% 0px',
+        threshold: [0, 0.05, 0.1, 0.25, 0.5, 1],
+      }
+    );
+    sections.forEach(function (section) {
+      observer.observe(section.el);
+    });
+  }
+
+  function initFromHash() {
+    var id = location.hash ? location.hash.slice(1) : '';
+    var el = id ? document.getElementById(id) : null;
+    if (el) {
+      lockUntil = Date.now() + 800;
+      setActive(id);
+      scrollToSection(el);
+    } else if (sections[0]) {
+      setActive(sections[0].id);
+    }
+  }
+
+  if (document.readyState === 'complete') {
+    window.setTimeout(initFromHash, 30);
+  } else {
+    window.addEventListener('load', function () {
+      window.setTimeout(initFromHash, 30);
+    });
+  }
+})();
+</script>

@@ -1,0 +1,20 @@
+{{/* Force light appearance so Luna chrome is never inverted by prefers-color-scheme. */}}
+<script>
+  document.documentElement.dataset.theme = 'light';
+  try {
+    localStorage.setItem('wcTheme', 'light');
+    localStorage.setItem('wcThemeDark', 'false');
+  } catch (e) {}
+</script>
+<style>
+  /* Ensure wallpaper is visible behind any theme body background. */
+  body.dark,
+  body {
+    background-color: #3a6ea5 !important;
+    background-image: url("{{ (resources.Get "media/wallpaper.svg").RelPermalink }}") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+  }
+</style>
