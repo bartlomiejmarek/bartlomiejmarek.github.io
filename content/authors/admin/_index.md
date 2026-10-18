@@ -50,4 +50,4 @@ I am a PhD Candidate at [CISPA Helmholtz Center for Information Security](https:
 
 My research focuses on the **privacy and security of large foundation models (LLMs)**. I am currently focusing on **privacy of multimodal models** (paper coming soon!).
 
-Previously, I studied at Wrocław University of Science and Technology (MEng in Trusted AI, BEng in Cybersecurity, both with honors), and worked on multilingual audio DeepFake detection and biometric systems.
+Previously, I studied at Wrocław University of Science and Technology, and worked on multilingual audio DeepFake detection and biometric systems.
