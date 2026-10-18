@@ -21,7 +21,7 @@ design:
 - ICLR 2025 Workshop BuildingTrust
 - NeurIPS 2024 Workshop SafeGenAI
 
-### Others
+<!-- ### Others
 
 - Co-organized tutorial *Privacy in Machine Learning* at MLinPL 2026.
-- Co-organized 1st edition of [*CISPA European Cybersecurity & AI Hackathon Championship*](https://cispa.de/en/cispa-hackathon-championship).
+- Co-organized 1st edition of [*CISPA European Cybersecurity & AI Hackathon Championship*](https://cispa.de/en/cispa-hackathon-championship). -->
